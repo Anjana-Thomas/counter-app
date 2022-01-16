@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- CSS code-->
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        /*apply css properties to body tag*/
+
+        body {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            
+            text-align: center;
+            font-family: 'Poppins';font-size: 22px;
+        }
+        #grad1{  
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to right, rgba(0, 16, 171, 0.96),rgba(57, 255, 243, 1));
+        }
+        #grad2{
+
+        background-color: white;
+        height: 500px;
+        width: 400px;
+        margin-left: 35%;
+        margin-top: 8%;
+        position: absolute;
+
+
+
+box-shadow: 0px 119px 126px rgba(0, 0, 0, 0.61);
+border-radius: 30px;
+        }
+
+
+    
+        /*apply css properties to container class*/
+
+       /* .container {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 100%;
+            text-align: center;
+            position: absolute;
+
+        }
+
+        /*apply css properties to button tag*/
+
+      #parent1 button {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            background-color:rgba(0, 16, 171, 0.96);
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            
+           
+           
+        }
+         #parent2 button {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            background-color:rgba(0, 16, 171, 0.96);
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+            float: left;
+            margin-left: 30px;
+            
+        }
+
+        /*apply hover effect to button tag*/
+
+        #parent1 button:hover {
+            background-color: white;
+            color: #0C1BA4;
+        }
+        #parent2 button:hover {
+            background-color: white;
+            color: #0C1BA4;
+        }
+
+        /*apply css properties to h2 tag*/
+
+        h2 {
+            color:#0C1BA4 ;
+            background-image: linear-gradient(45deg, rgba(57, 255, 243, 1), rgba(0, 16, 171, 0.96));
+            margin: 0 50px;
+            font-size: 125px;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+
+        /*apply css properties to h1 tag*/
+
+        h1 {
+            font-size: 35px;
+            color: black;
+            text-align: center;
+            
+        }
+#parent1{
+    
+position: absolute;
+width: 329px;
+height: 50px;
+left: 40px;
+top: 320px;
+
+background: #FFFFFF;
+border: 2px solid rgba(0, 10, 171, 0.96);
+box-sizing: border-box;
+box-shadow: 0px 8px 27px -3px #97A1F5;
+border-radius: 60px;
+
+        }
+#parent2{
+    
+position: absolute;
+width: 329px;
+height: 50px;
+left: 40px;
+top: 400px;
+
+background: #FFFFFF;
+border: 2px solid rgba(0, 10, 171, 0.96);
+box-sizing: border-box;
+box-shadow: 0px 8px 27px -3px #97A1F5;
+border-radius: 60px;
+
+        }
+#child1{
+display: inline block;
+justify-content: center;
+font-size: 15px;
+}
+#parent1:hover {
+            background-color: #0C1BA4;
+            color: white;
+        }
+#parent2:hover {
+            background-color: #0C1BA4;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="grad1">
+    <!-- give a suitable heading using h1 tag-->
+    <div id="grad2">
+    <h1>CounterApp</h1>
+
+
+        <!-- adding button and heading to show the digits -->
+        <!-- increment() and decrement() functions on button click-->
+        <h2 id="counting"></h2>
+        <div id="parent1">
+            <div id="child1">
+                <button onclick="increment()">+</button>
+                <p>increment</p>
+</div>
+               
+           
+            
+        </div>
+            
+        <div id="parent2">
+            <div id="child1">
+                <button onclick="decrement()">-</button>
+                <p>decrement</p>
+            </div>
+            
+               
+          
+        </div>
+        </div>
+        
+    
+    <!-- JavaScript code-->
+    <script>
+        //initialising a variable name data
+        var data = 0;
+
+        //printing default value of data that is 0 in h2 tag
+        document.getElementById("counting").innerText = data;
+
+        //creation of increment function
+        function increment() {
+            data = data + 1;
+            document.getElementById("counting").innerText = data;
+        }
+        //creation of decrement function
+        function decrement() {
+            data = data - 1;
+            document.getElementById("counting").innerText = data;
+        }
+    </script>
+    </div>
+    </div>
+</body>
+
+</html>
